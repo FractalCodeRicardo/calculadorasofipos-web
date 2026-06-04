@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Calculadora SOFIPOS México - Calcula ganancias, compara rendimientos y toma mejores decisiones financieras.">
+  <meta name="description" content="Calculadora SOFIPOS México - Calcula ganancias, compara rendimientos y toma mejores decisiones financieras.">
   <title>Calculadora SOFIPOS México</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-32x32.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
+  <!-- HEADER -->
   <header>
-    <div class="container">
-      <div class="icon">
-        <img
-          src="/images/icon.png"
-          alt="Calculadora de sofipos" width="120" height="120">
+    <div class="header-inner">
+      <div class="header-icon">
+        <img src="/images/icon.png" alt="Calculadora SOFIPOS" width="100" height="100"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="icon-placeholder" style="display:none;">💹</div>
       </div>
-      <div class="content">
-        <h1>Calculadora SOFIPOS México</h1>
-        <p class="subtitle">Calcula rendimientos, compara inversiones y toma mejores decisiones financieras.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.thisisthetime.calculadorasofipos&hl=es"
-          target="_blank">
-          <img src="images/descarga.png"/>
+      <div class="header-text">
+        <div class="header-badge">App gratuita · Android</div>
+        <h1>Calculadora SOFIPOS<br>México</h1>
+        <p class="subtitle">Calcula rendimientos, compara instituciones y toma mejores decisiones financieras sin fórmulas complicadas.</p>
+        <a class="cta-btn"
+          href="https://play.google.com/store/apps/details?id=com.thisisthetime.calculadorasofipos&hl=es"
+          target="_blank" rel="noopener">
+          Descargar en Google Play
         </a>
       </div>
     </div>
   </header>
 
-  <section class="video">
-    <div class="container">
-      <h2>Video demo</h2>
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/HK7JcT3F86g" title="Video demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat">
+        <div class="stat-n">13+</div>
+        <div class="stat-l">Instituciones</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">100%</div>
+        <div class="stat-l">Gratuita</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">Diario</div>
+        <div class="stat-l">Interés</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">Rápido</div>
+        <div class="stat-l">Resultados</div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <div class="container">
-      <h2>¿Qué puedes hacer?</h2>
-      <div class="features">
-        <div class="feature">
-          <span class="icon">📈</span>
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>¿Qué puedes hacer?</h2>
+        <p>Todo lo que necesitas para entender y maximizar tus rendimientos</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
           <h3>Calcula ganancias</h3>
           <p>Estima el rendimiento de inversiones a plazo fijo, cuentas a la vista y más.</p>
         </div>
-        <div class="feature">
-          <span class="icon">⚖️</span>
+        <div class="feature-card">
+          <div class="feature-icon">⚖️</div>
           <h3>Compara instituciones</h3>
           <p>Descubre cuál opción genera más rendimiento para tu dinero.</p>
         </div>
-        <div class="feature">
-          <span class="icon">🧮</span>
+        <div class="feature-card">
+          <div class="feature-icon">🧮</div>
           <h3>Tasas mixtas</h3>
           <p>Soporte para tasas promocionales, mixtas y cuentas con tope de rendimiento.</p>
         </div>
-        <div class="feature">
-          <span class="icon">📊</span>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
           <h3>Interés diario</h3>
           <p>Visualiza el rendimiento día a día para cuentas de ahorro e inversión.</p>
         </div>
-        <div class="feature">
-          <span class="icon">⚡</span>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
           <h3>Resultados rápidos</h3>
           <p>Sin fórmulas complicadas. Ingresa los datos y obtén resultados al instante.</p>
         </div>
-        <div class="feature">
-          <span class="icon">🧠</span>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
           <h3>Decisiones claras</h3>
           <p>Toma el control de tus finanzas con información simple y transparente.</p>
         </div>
@@ -80,54 +100,92 @@
     </div>
   </section>
 
-  <section class="institutions">
-    <div class="container">
-      <h2>Instituciones que puedes comparar</h2>
-      <div class="grid">
-        <span>Klar</span>
-        <span>Nu</span>
-        <span>Mercado Pago</span>
-        <span>Ualá</span>
-        <span>Mifel</span>
-        <span>Finsus</span>
-        <span>Stori</span>
-        <span>Cetesdirecto</span>
-        <span>Supertasas</span>
-        <span>Finamex</span>
-        <span>Openbank</span>
-        <span>DiDi</span>
-        <span>Revolut</span>
+  <!-- INSTITUTIONS -->
+  <section class="section institutions">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Instituciones que puedes comparar</h2>
+        <p>Incluye las principales SOFIPOS, bancos digitales y plataformas de inversión</p>
+      </div>
+      <div class="inst-grid">
+        <span class="inst-tag"><span class="inst-dot"></span>Klar</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Nu</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Mercado Pago</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Ualá</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Mifel</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Finsus</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Stori</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Cetesdirecto</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Supertasas</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Finamex</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Openbank</span>
+        <span class="inst-tag"><span class="inst-dot"></span>DiDi</span>
+        <span class="inst-tag"><span class="inst-dot"></span>Revolut</span>
       </div>
     </div>
   </section>
 
-  <section class="screenshots">
-    <div class="container">
-      <h2>Capturas de pantalla</h2>
-      <div class="grid">
-        <img
-          src="https://play-lh.googleusercontent.com/KaUzKl6Wj0MSGBaYAFOEZ2jl55JcMG509WTFzy2A417fX_M7_5Zil7p8DRlrjkvhol2pWyvDJGkdKQducXQ9yA=w526-h296-rw"
-          alt="Captura 1" loading="lazy">
-        <img
-          src="https://play-lh.googleusercontent.com/dTfl7oEwiBmMFbRC6pHpaxUOj9FmExL-KWzgzu1GZvDDkA5Gli7Adx5E_UzOyRt7GWaW4qeKYs2kyxVQIbsXSQ=w526-h296-rw"
-          alt="Captura 2" loading="lazy">
-        <img
-          src="https://play-lh.googleusercontent.com/sFOtEjxKj1csGwW7HQIZobZeboBYVRAGi458IVzgHWBuX9BUqpg3fZYN7iBVqcJRZ4O_8rMZp8GBdXPE5Pwk=w526-h296-rw"
-          alt="Captura 3" loading="lazy">
+  <!-- VIDEO -->
+  <section class="section video-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Mírala en acción</h2>
+        <p>Un recorrido rápido por las funciones principales</p>
+      </div>
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/HK7JcT3F86g" title="Video demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
+  <!-- SCREENSHOTS -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Capturas de pantalla</h2>
+        <p>Así se ve la app en tu teléfono</p>
+      </div>
+      <div class="screenshots-grid">
+        <div class="screenshot">
+          <img src="/images/screenshoot1.png"
+            alt="Captura de pantalla 1" loading="lazy">
+        </div>
+        <div class="screenshot">
+          <img src="/images/screenshoot2.png"
+            alt="Captura de pantalla 2" loading="lazy">
+        </div>
+        <div class="screenshot">
+          <img src="/images/screenshoot3.png"
+            alt="Captura de pantalla 3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>¿Listo para invertir mejor?</h2>
+    <p>Descarga la app gratis y empieza a comparar rendimientos hoy mismo.</p>
+    <a class="cta-btn-lg"
+      href="https://play.google.com/store/apps/details?id=com.thisisthetime.calculadorasofipos&hl=es"
+      target="_blank" rel="noopener">
+      Descargar gratis
+    </a>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>Desarrollada por <a href="https://play.google.com/store/apps/developer?id=Ricardo+S.+B."
-          target="_blank">Ricardo S. B.</a></p>
-      <p style="margin-top: 4px"><a href="https://programmingheadache.com" target="_blank">Sitio web</a> &middot; <a
-          href="https://www.freeprivacypolicy.com/live/658830cc-c4ac-4b0c-bcc5-d86782ea9428"
-          target="_blank">Privacidad</a></p>
-    </div>
+    <p>
+      Desarrollada por
+      <a href="https://play.google.com/store/apps/developer?id=Ricardo+S.+B." target="_blank" rel="noopener">Ricardo S. B.</a>
+      <span class="footer-sep">·</span>
+      <a href="https://programmingheadache.com" target="_blank" rel="noopener">Sitio web</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.freeprivacypolicy.com/live/658830cc-c4ac-4b0c-bcc5-d86782ea9428" target="_blank" rel="noopener">Privacidad</a>
+    </p>
   </footer>
 
 </body>
-
 </html>
